@@ -28,7 +28,7 @@ const seneca = Seneca()
 const tracer = DdTrace.init()
 
 seneca.use('telemetry-datadog', {
-	getTracer: () => tracer
+  getTracer: () => tracer
 })
 ```
 
