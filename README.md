@@ -75,4 +75,3 @@ npm run test
 ## Background
 
 Part of the [Senecajs org](https://github.com/senecajs/).
- 
