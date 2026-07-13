@@ -15,11 +15,17 @@
 
 ## Install
 
+```sh
+npm install @seneca/telemetry-datadog
+```
+
+Also install the required peer dependencies:
+
 - Install and enable the `datadog-agent` daemon from the Datadog website
 - Install the `dd-trace` package
-- Initialize the `dd-trace` package in your project
-- Install this plugin
-- Use this plugin with your Seneca instance, IMPORTANT - wrap your `dd-trace` in a function and pass to the plugin via the `getTracer` option:
+
+## Quick Example
+
 ```js
 const DdTrace = require('dd-trace')
 const Seneca = require('seneca')
@@ -30,13 +36,6 @@ const tracer = DdTrace.init()
 seneca.use('telemetry-datadog', {
   getTracer: () => tracer
 })
-```
-
-## Quick Example
-
-```js
-require('seneca')()
-  .use('@seneca/telemetry-datadog')
 ```
 
 ## More Examples
