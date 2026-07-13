@@ -20,7 +20,7 @@
 - Initialize the `dd-trace` package in your project
 - Install this plugin
 - Use this plugin with your Seneca instance, IMPORTANT - wrap your `dd-trace` in a function and pass to the plugin via the `getTracer` option:
-```javascript
+```js
 const DdTrace = require('dd-trace')
 const Seneca = require('seneca')
 
